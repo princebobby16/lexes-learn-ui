@@ -8,5 +8,5 @@ import 'package:angular_forms/angular_forms.dart';
 )
 
 class AppComponent{
-  String title = "Lexes Company Limited";
+  String title = "Lexes Corp";
 }
