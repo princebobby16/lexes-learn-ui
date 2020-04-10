@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<svg width="500" height="375" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#7f7f7f" height="103" id="svg_1" stroke="#4c4c4c" stroke-width="5" width="140" x="249" y="90.40625"/>
+  <rect fill="#7f7f7f" height="1" id="svg_2" stroke="#333333" stroke-width="5" width="130.500001" x="253.75" y="95.25"/>
+  <rect fill="#d3cfcf" height="86.999996" id="svg_8" stroke="#d3cfcf" stroke-width="5" width="24" x="253.875" y="101.375"/>
+  <circle cx="264.500001" cy="107.624997" fill="#969393" id="svg_10" r="0.83844" stroke="#969393" stroke-width="3"/>
+  <circle cx="254.750005" cy="95.875001" fill="#9e1111" id="svg_11" r="1.621704" stroke="#969393" stroke-width="0"/>
+  <circle cx="259.125005" cy="95.875001" fill="#c49711" id="svg_12" r="1.621704" stroke="#969393" stroke-width="0"/>
+  <circle cx="263.625005" cy="95.875001" fill="#3f7f00" id="svg_13" r="1.621704" stroke="#969393" stroke-width="0"/>
+  <path d="m263.593107,113.51812l0.328125,-1.75l1.09375,0l0.328125,1.75l-1.75,0z" fill="#969393" id="svg_14" stroke="#969393" stroke-width="5"/>
+  <rect fill="#b2b2b2" height="2" id="svg_16" stroke="#b2b2b2" stroke-width="0" width="21.25" x="254.875" y="124.125"/>
+  <rect fill="#b2b2b2" height="2" id="svg_18" stroke="#b2b2b2" stroke-width="0" width="21.25" x="254.5" y="130.125"/>
+  <rect fill="#b2b2b2" height="2" id="svg_19" stroke="#b2b2b2" stroke-width="0" width="21.25" x="254.75" y="136.625"/>
+  <rect fill="#b2b2b2" height="2" id="svg_20" stroke="#b2b2b2" stroke-width="0" width="21.25" x="254.75" y="143.375"/>
+  <rect fill="#414551" height="7" id="svg_21" stroke="#b2b2b2" stroke-width="0" style="vector-effect: non-scaling-stroke;" width="105.999994" x="280.625" y="98.625"/>
+  <circle cx="381.406892" cy="102.347657" fill="#969393" id="svg_24" r="0.83844" stroke="#969393" stroke-width="3"/>
+  <rect fill="#dbdddd" height="19.499999" id="svg_25" stroke="#969393" stroke-width="0" width="39.749999" x="285.875" y="112.875"/>
+  <circle cx="318.406892" cy="119.347657" fill="#969393" id="svg_27" r="0.83844" stroke="#969393" stroke-width="3"/>
+  <path d="m317.499998,125.240781l0.328125,-1.75l1.09375,0l0.328125,1.75l-1.75,0z" fill="#969393" id="svg_26" stroke="#969393" stroke-width="5"/>
+  <rect fill="#b2b2b2" height="3.25" id="svg_28" stroke="#b2b2b2" stroke-width="0" width="16.000002" x="290.25" y="116.375"/>
+  <rect fill="#b2b2b2" height="0.25" id="svg_29" stroke="#b2b2b2" stroke-width="0" width="21.25" x="288.5" y="123.125"/>
+  <rect fill="#b2b2b2" height="0.5" id="svg_30" stroke="#b2b2b2" stroke-width="0" width="21.25" x="288.5" y="126.25"/>
+  <rect fill="#dbdddd" height="19.499999" id="svg_36" stroke="#969393" stroke-width="0" width="39.749999" x="332.75" y="113.125"/>
+  <circle cx="365.281892" cy="119.597657" fill="#969393" id="svg_35" r="0.83844" stroke="#969393" stroke-width="3"/>
+  <path d="m364.374998,125.490781l0.328125,-1.75l1.09375,0l0.328125,1.75l-1.75,0z" fill="#969393" id="svg_34" stroke="#969393" stroke-width="5"/>
+  <rect fill="#b2b2b2" height="3.25" id="svg_33" stroke="#b2b2b2" stroke-width="0" width="16.000002" x="337.125" y="116.625"/>
+  <rect fill="#b2b2b2" height="0.25" id="svg_32" stroke="#b2b2b2" stroke-width="0" width="21.25" x="335.375" y="123.375"/>
+  <rect fill="#b2b2b2" height="0.5" id="svg_31" stroke="#b2b2b2" stroke-width="0" width="21.25" x="335.375" y="126.5"/>
+  <rect fill="#4c4c4c" height="23.499999" id="svg_37" stroke="#969393" stroke-width="0" width="9.5" x="311.875" y="193.125"/>
+  <rect fill="#4c4c4c" height="2" id="svg_38" stroke="#969393" stroke-width="0" width="38" x="297.375" y="214.875"/>
+ </g>
+</svg>
