@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#7f7f7f" height="121" id="svg_1" stroke="#565454" stroke-width="5" width="157" x="192.5" y="121.40625"/>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_4" stroke="#000000" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="218.5" xml:space="preserve" y="153.40625">&lt;&gt;</text>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_6" stroke="#565454" stroke-width="0" text-anchor="middle" x="245.5" xml:space="preserve" y="162.40625">______</text>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_7" stroke="#565454" stroke-width="0" text-anchor="middle" x="265.171875" xml:space="preserve" y="172.90625">_________</text>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_8" stroke="#565454" stroke-width="0" text-anchor="middle" x="244.671875" xml:space="preserve" y="184.90625">______</text>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_9" stroke="#565454" stroke-width="0" text-anchor="middle" x="257.921875" xml:space="preserve" y="195.90625">________</text>
+  <rect fill="#3f3d3d" height="7" id="svg_11" stroke="#000000" stroke-opacity="0" stroke-width="5" width="152.249997" x="194.875001" y="123.625"/>
+  <rect fill="#ffffff" height="0.25" id="svg_12" stroke="#000000" stroke-opacity="0" stroke-width="5" width="0.5" x="188.625" y="103.375"/>
+  <rect fill="#ffffff" height="0" id="svg_13" stroke="#000000" stroke-opacity="0" stroke-width="5" width="60.25" x="189.125" y="103.375"/>
+  <path d="m199.740621,127.278638l0.066989,-0.11602l0.11602,-0.066989l0.133979,0l0.11602,0.066989l0.066989,0.11602l0,0.133979l-0.066989,0.11602l-0.11602,0.066989l-0.133979,0l-0.11602,-0.066989l-0.066989,-0.11602l0,-0.133979z" fill="#f20c0c" id="svg_22" stroke="#d61717" stroke-width="5"/>
+  <path d="m206.625006,127.308011l0.066989,-0.11602l0.11602,-0.066989l0.133979,0l0.11602,0.066989l0.066989,0.11602l0,0.133979l-0.066989,0.11602l-0.11602,0.066989l-0.133979,0l-0.11602,-0.066989l-0.066989,-0.11602l0,-0.133979z" fill="#e5db27" id="svg_23" stroke="#e0b60f" stroke-width="5"/>
+  <path d="m213.375006,127.308011l0.066989,-0.11602l0.11602,-0.066989l0.133979,0l0.11602,0.066989l0.066989,0.11602l0,0.133979l-0.066989,0.11602l-0.11602,0.066989l-0.133979,0l-0.11602,-0.066989l-0.066989,-0.11602l0,-0.133979z" fill="#f20c0c" id="svg_24" stroke="#3f7f00" stroke-width="5"/>
+  <rect fill="#565454" height="26" id="svg_25" stroke="#565454" stroke-width="5" width="13" x="264.75" y="242.75"/>
+  <text fill="#ffffff" font-family="Sans-serif" font-size="24" id="svg_26" stroke="#565454" stroke-width="0" text-anchor="middle" x="257.671875" xml:space="preserve" y="206.5">________</text>
+  <rect fill="#565454" height="2.5" id="svg_27" stroke="#565454" width="54.5" x="243.75" y="269.25"/>
+  <rect fill="#ffffff" height="0" id="svg_28" stroke="#565454" stroke-width="5" width="1" x="275.75" y="300.25"/>
+ </g>
+</svg>
