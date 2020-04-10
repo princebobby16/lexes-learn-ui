@@ -1,8 +1,10 @@
 import 'package:angular/angular.dart';
-import 'package:angular_app/src/lexes_component/register_component/register_component.dart';
-import 'package:angular_app/src/lexes_component/signin_component/signin_component.dart';
+import 'package:angular_app/src/navbar_component.dart';
+import 'package:angular_app/src/register_component.dart';
+import 'package:angular_app/src/signin_component.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'src/lexes_component/home_component/home_component.dart';
+import 'src/home_component.dart';
+import 'src/navbar_component.dart';
 
 @Component(
   selector: 'my-app',
@@ -13,6 +15,7 @@ import 'src/lexes_component/home_component/home_component.dart';
     HomeComponent,
     SigninComponent,
     RegisterComponent,
+    NavbarComponent,
   ],
 )
 
