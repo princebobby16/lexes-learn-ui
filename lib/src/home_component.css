@@ -1,0 +1,8 @@
+.homeB {
+    text-decoration: none;
+    color: #38c172;
+}
+  
+.homeB:hover {
+    color: #fff;
+}
