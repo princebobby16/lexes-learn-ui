@@ -1,14 +1,10 @@
 <div class="homePage">
     <div class="bgd" style="background-color: white !important;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 col-sm-12 col-lg-12">
                 <div id="logreg-forms">
                     <form class="form-signin">
                         <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
-                        <div class="form-group">
-                            <input type="text" id="inputInstitution" class="form-control" placeholder="Name Institution" required=""
-                            autofocus="" size="50">
-                        </div>
                         <div class="form-group">
                             <input type="text" id="inputUsername" class="form-control" placeholder="Username" required=""
                             autofocus="" size="50">
@@ -20,17 +16,13 @@
                         <div class="form-group">
                             <select class="browser-default custom-select">
                                 <option selected>What is your status</option>
-                                <option value="1">Teacher/Facilitator</option>
-                                <option value="2">Student/Learner</option>
-                                <option value="3">Administrator</option>
+                                <option value="1">Teacher</option>
+                                <option value="2">Students</option>
                             </select>
                         </div>
                         <button class="btn btn-success" type="submit"><i class="fas fa-sign-in-alt"></i> Sign
                             in</button>
                         <a href="#" id="forgot_pswd">Forgot password?</a>
-                        <hr>
-                        <!-- <p>Don't have an account!</p>  -->
-                        <a href="#/register" class="btn btn-outline-primary btn-block RegB" type="button">Register New Account</a>
                     </form>
 
                     <form action="/reset/password/" class="form-reset">
@@ -40,21 +32,6 @@
                         <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
                     </form>
                     <br>
-                </div>
-            </div>
-            <div class="col-md-6 container-fluid">
-                <br>
-                <h1 class="text-center mb-3 h3 font-weight-bolder">
-                    Lexes Learn Company Limited
-                </h1>
-                <img src="img/icon4.svg" alt="svg" style="zoom: 0.7;">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a class="nav-link" href="#/register">Register with us today</a>
-                        </h5>
-                        <p class="card-text">And get a free dashboard to manage your students</p>
-                    </div>
                 </div>
             </div>
         </div>
