@@ -1,10 +1,9 @@
 import 'package:angular/angular.dart';
-import 'package:angular_app/src/navbar_component.dart';
-import 'package:angular_app/src/dashboard_component.dart';
-import 'package:angular_app/src/signin_component.dart';
+import 'package:angular_app/src/route_path.dart';
+import 'src/navbar_component/navbar_component.dart';
+import 'src/signin_component/signin_component.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'src/home_component.dart';
-import 'src/navbar_component.dart';
+import 'src/home_component/home_component.dart';
 
 @Component(
   selector: 'my-app',
@@ -14,12 +13,9 @@ import 'src/navbar_component.dart';
     formDirectives,
     HomeComponent,
     SigninComponent,
-    DashboardComponent,
     NavbarComponent,
   ],
+  exports: [RoutePaths],
 )
 
-class AppComponent{
-  String title = "Lexes Company Limited";
-
-}
+class AppComponent{}

@@ -21,7 +21,7 @@ void main() {
   });
 
   test('Greet world', () async {
-    await fixture.update((c) => c.title = 'World');
+    await fixture.update((c) => c);
     expect(fixture.text, 'Hello World');
   });
 
