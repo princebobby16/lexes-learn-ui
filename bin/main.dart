@@ -3,12 +3,15 @@ import 'dart:async' show runZoned;
 import 'package:path/path.dart' show join, dirname;
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
+import 'package:pwa/client.dart' as pwa;
 
 void main() {
   // Assumes the server lives in bin/ and that `webdev build` ran
   var pathToBuild = join(dirname(Platform.script.toFilePath()), '..', 'build');
 
   var handler = createStaticHandler(pathToBuild, defaultDocument: 'index.html');
+
+  pwa.Client();
 
   var portEnv = Platform.environment['PORT'];
   var port = portEnv == null ? 9999 : int.parse(portEnv);
