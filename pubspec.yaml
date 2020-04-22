@@ -13,6 +13,7 @@ dependencies:
   stream_transform: ^0.0.19
   angular_components: ^0.14.0-alpha+1
   pwa: ^0.2.0
+  ng_bootstrap: any
 
 dev_dependencies:
   angular_test: ^2.3.1

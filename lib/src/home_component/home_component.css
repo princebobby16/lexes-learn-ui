@@ -1,182 +1,23 @@
-.homeB {
-    text-decoration: none;
-    color: #38c172;
-}
-  
-.homeB:hover {
-    color: #fff;
-}
-.secondContainer{
-  display: none;
-}
-.mes0{
-  font-size: 18px;
-  color: #afacac;
-  font-family: corbel;
-}
-.content{
-  margin: 0;
-}
-.space{
-  padding-left: 50px;
-}
-.sm{
-  max-width: 100%;
-  height: auto;
-}
-.sm:hover{
-  zoom: 0.95;
-}
+html,
+    body,
+    header {
+      height: 100%;
+    }
 
-.area{
-  position: absolute;
-  top: 15%;
-  padding: 3%;
-  margin: 0% 1%;
-  color: #b3b1b1;
-}
-.text{
-  color: #c7c7c7;
-  font-size: 50px;
-}
+    @media (max-width: 740px) {
 
+      html,
+      body,
+      header {
+        height: 900px;
+      }
+    }
 
-.fadefive{
-    position: relative;
-    -webkit-animation: 4.5s ease 0s normal  forwards 1 five;
-    animation: 4.5s ease 0s normal  forwards 1 five;
-}
-.fadeone {
-    animation: one ease 3s;
-    -webkit-animation: one ease 3s;
-    -moz-animation: one ease 3s;
-    -o-animation: one ease 3s;
-    -ms-animation: one ease 3s;
-  }
-  .fadetwo{
-    position: relative;
-    -webkit-animation: 3s ease 0s normal forwards 1 two;
-    animation: 3s ease 0s normal forwards 1 two;
-  }
-  .fadethree{
-    position: relative;
-    -webkit-animation: 3.5s ease 0s normal  forwards 1 three;
-    animation: 3.5s ease 0s normal  forwards 1 three;
-  }
-  .fadefour{
-    position: relative;
-    -webkit-animation: 4s ease 0s normal  forwards 1 four;
-    animation: 4s ease 0s normal  forwards 1 four;
-  }
-  
+    @media (min-width: 800px) and (max-width: 850px) {
 
-
-
-/* Keyframes --- animation */
-   @keyframes four{
-    0% { opacity:0; left: 8%; }
-    66% { opacity:0; left: 16%;}
-    100% { opacity:1; left: 20%; }
-  }
-  
-  @-webkit-keyframes four{
-    0% { opacity:0; left: 8%; }
-    66% { opacity:0; left: 16%; }
-    100% { opacity:1; left: 20%; }
-  }
-  
-  @keyframes five{
-    0% { opacity:0; left: 8%; }
-    66% { opacity:0; left: 16%;}
-    100% { opacity:1; left: 24%; }
-  }
-  
-  @-webkit-keyframes five{
-    0% { opacity:0; left: 8%; }
-    66% { opacity:0; left: 16%; }
-    100% { opacity:1; left: 24%; }
-  }
-  
-  
-  @keyframes three{
-    0% { opacity:0; left: 4%; }
-    66% { opacity:0; left: 8%;}
-    100% { opacity:1; left: 10%; }
-  }
-  
-  @-webkit-keyframes three{
-    0% { opacity:0; left: 4%; }
-    66% { opacity:0; left: 8%; }
-    100% { opacity:1; left: 10%; }
-  }
-  
-  @keyframes two{
-    0% { opacity:0; left: 2%; }
-    66% { opacity:0; left: 4%;}
-    100% { opacity:1; left: 5%; }
-  }
-  
-  @-webkit-keyframes two{
-    0% { opacity:0; left: 2%; }
-    66% { opacity:0; left: 4%; }
-    100% { opacity:1; left: 5%; }
-  }
-  
-  
-  @keyframes one {
-    0% {
-      opacity:0;
+      html,
+      body,
+      header {
+        height: 980px;
+      }
     }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-moz-keyframes one {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes one {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes one {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes one {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-  
-  
-  }
-
-
-  /* mmobile version of the home */
-  @media screen and(max-width: 768px){
-    .area{
-      display: none !important;
-    }
-    .secondContainer{
-      display: block;
-    }
-  }

@@ -13,19 +13,13 @@ const List<String> _accounts = [
 @Component(
   selector: 'signin-app',
   templateUrl: 'signin_component.html',
-  styleUrls: ['signin_component.css'],
   directives: [formDirectives, coreDirectives],
 )
+
 class SigninComponent{
   Login login = Login("", "", _accounts[0]);
 
-  bool submitted = false;
-
   List<String> get accounts => _accounts;
-
-  void onSubmit(){
-    submitted = true;
-  }
 
   Future<bool> signIn(String username, String password, String account_type) async {
     username.trim();
@@ -39,14 +33,13 @@ class SigninComponent{
     Map loginData={
       "username":username,
       "password":password,
-      "account_type":account_type,
     };
 
     print(loginData);
 
     // Send to server
     HttpRequest.request(
-        'http://localhost:8000/users/login',
+        'http://localhost:8000/users/student/login',
         method: 'POST',
         sendData: json.encode(loginData),
         requestHeaders: {
@@ -57,6 +50,7 @@ class SigninComponent{
       print(resp.responseUrl);
       print(resp.responseText);
     });
+    return true;
   }
 
 }
