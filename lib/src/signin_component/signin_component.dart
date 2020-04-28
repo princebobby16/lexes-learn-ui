@@ -3,7 +3,9 @@ import 'dart:html';
 
 import 'package:angular/angular.dart';
 import 'package:angular_app/src/login_details.dart';
+import 'package:angular_app/src/route_path.dart';
 import 'package:angular_forms/angular_forms.dart';
+import 'package:angular_router/angular_router.dart';
 
 const List<String> _accounts = [
   'Teacher',
@@ -16,8 +18,11 @@ const List<String> _accounts = [
   directives: [formDirectives, coreDirectives],
 )
 
-class SigninComponent{
+class SigninComponent {
   Login login = Login("", "", _accounts[0]);
+  final Router _router;
+
+  SigninComponent(this._router);
 
   List<String> get accounts => _accounts;
 
@@ -35,11 +40,21 @@ class SigninComponent{
       "password":password,
     };
 
+    String url = "";
+
+    if(account_type == "Student"){
+      url = "http://localhost:8000/users/student/login";
+    }else if(account_type == "Teacher"){
+      url = "http://localhost:8000/users/teacher/login";
+    }
+
     print(loginData);
+
+    var response;
 
     // Send to server
     HttpRequest.request(
-        'http://localhost:8000/users/student/login',
+        url,
         method: 'POST',
         sendData: json.encode(loginData),
         requestHeaders: {
@@ -49,6 +64,14 @@ class SigninComponent{
         .then((resp) {
       print(resp.responseUrl);
       print(resp.responseText);
+      response = json.decode(resp.responseText);
+      print(response);
+
+      // Store in local storage
+      // window.localStorage.addAll(token);
+
+      _router.navigate(RoutePaths.dashboard.toUrl());
+
     });
     return true;
   }

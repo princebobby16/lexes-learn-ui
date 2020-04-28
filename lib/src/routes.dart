@@ -2,6 +2,7 @@ import 'package:angular_router/angular_router.dart';
 import 'home_component/home_component.template.dart' as home_template;
 import 'signin_component/signin_component.template.dart' as signin_template;
 import 'dashboard_component/dashboard_component.template.dart' as dashboard_template;
+import 'dashboard_component/classroom_component/classroom_component.template.dart' as classroom_template;
 import 'route_path.dart';
 export 'routes.dart';
 
@@ -21,11 +22,17 @@ class Routes{
     routePath: RoutePaths.dashboard,
     component: dashboard_template.DashboardComponentNgFactory,
   );
+  // static final classroom = RouteDefinition(
+  //   routePath: RoutePaths.classroom,
+  //   component: classroom_template.ClassroomComponentNgFactory,
+  // );
+  
   //edited
   static final all = <RouteDefinition> [  
     home,
     signin,
-    dashboard
+    dashboard,
+    // classroom
   ];
 
 }

@@ -7,14 +7,14 @@
         <div group class="mat-drawer-spacer"></div>
         <!-- Here is a group without a label -->
         <div group>
-            <material-list-item>
-                <material-icon class="fas fa-layer-group"></material-icon> Groups
+            <material-list-item  (click)="goHome()">
+                <material-icon icon="home"></material-icon> Home
             </material-list-item>
-            <material-list-item>
-                <material-icon class="fas fa-comment"></material-icon> Chat
+            <material-list-item (click)="gotoChat()">
+                <material-icon icon="chat"></material-icon> Classroom
             </material-list-item>   
             <material-list-item>
-                <material-icon class="fas fa-broadcast-tower"></material-icon> Announcememnts
+                <material-icon icon="notification"></material-icon> Announcememnts
             </material-list-item>
             <material-list-item>
                 <div class="controls">
@@ -27,7 +27,7 @@
         <div group>
             <div label>Tags</div>
             <material-list-item>
-                <material-icon class="fas fa-star"></material-icon>Favorites
+                <material-icon icon="star"></material-icon>Favorites
             </material-list-item>
         </div>
     </material-list>
@@ -54,35 +54,6 @@
     <br>
     
     <div class="conatiner padding">
-        <div class="col-lg-4 col-md-6 mb-4">
-            <!-- Card -->
-            <div class="card card-cascade wider card-transparent">
-
-                <!-- Card image -->
-                <div class="view view-cascade gradient-card-header peach-gradient">
-                  <h2 class="card-header-title mb-2">Title of the news</h2>
-                  <p class=""><i class="fas fa-calendar"></i> 26.07.2017</p>
-  
-                </div>
-                <!-- Card image -->
-  
-                <!-- Card content -->
-                <div class="card-body card-body-cascade ext-center">
-  
-                  <p class="card-text mr-2 ml-2 pb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus, ex, recusandae. Facere
-                    modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                    non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-  
-                  <a href="#" class="orange-text mt-1 d-flex flex-row-reverse">
-                    <h5 class="waves-effect p-2">Read more <i class="fas fa-chevron-right"></i></h5>
-                  </a>
-                </div>
-                <!-- Card content -->
-  
-              </div>
-              <!-- Card -->
-  
-        </div>
+        <router-outlet [routes]="Routes.all"></router-outlet>
     </div>
 </material-content>
