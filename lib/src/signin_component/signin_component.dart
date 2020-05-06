@@ -50,7 +50,7 @@ class SigninComponent {
 
     print(loginData);
 
-    var response;
+    // var response;
 
     // Send to server
     HttpRequest.request(
@@ -64,13 +64,15 @@ class SigninComponent {
         .then((resp) {
       print(resp.responseUrl);
       print(resp.responseText);
-      response = json.decode(resp.responseText);
-      print(response);
 
       // Store in local storage
       // window.localStorage.addAll(token);
 
-      _router.navigate(RoutePaths.dashboard.toUrl());
+      if (account_type == "Student") {
+        _router.navigate(RoutePaths.student_dashboard.toUrl());
+      } else if (account_type == "Teacher") {
+        _router.navigate(RoutePaths.teacher_dashboard.toUrl());
+      }
 
     });
     return true;

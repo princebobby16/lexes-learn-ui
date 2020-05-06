@@ -1,11 +1,12 @@
 
-import 'package:angular_app/src/dashboard_component/home/home_component.template.dart' as home_template;
 
-import 'route_paths.dart';
+import 'package:angular_app/src/dashboards/student_dashboard_component/route_paths.dart';
 import 'package:angular_router/angular_router.dart';
-import 'package:angular_app/src/dashboard_component/classroom_component/classroom_component.template.dart' as classroom_template;
+import 'package:angular_app/src/dashboards/student_dashboard_component/classroom_component/classroom_component.template.dart' as classroom_template;
+import 'package:angular_app/src/dashboards/student_dashboard_component/home/home_component.template.dart' as home_template;
 
-export 'route_paths.dart';
+export 'package:angular_app/src/dashboards/student_dashboard_component/route_paths.dart';
+
 
 class Routes{
   static final classroom = RouteDefinition(
