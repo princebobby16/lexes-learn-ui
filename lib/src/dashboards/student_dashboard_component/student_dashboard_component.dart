@@ -57,15 +57,15 @@ class StudentDashboardComponent implements CanActivate {
   @override
   Future<bool> canActivate(RouterState current, RouterState next) async {
 
-    if(window.localStorage.containsKey('token')){
-      // Found token
-      return true;
-    }
-    
+//    if(window.localStorage.containsKey('token')){
+//      // Found token
+//      return true;
+//    }
+//    TODO: Implement canNavigate
     print("Couldn't find token");
 
-    _router.navigateByUrl("signin");
-    return false;
+//    _router.navigateByUrl("signin");
+//    return false;
   }
   
 }

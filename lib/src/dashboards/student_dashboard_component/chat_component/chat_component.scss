@@ -1,66 +1,75 @@
-.icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
+//.icon {
+//  width: 24px;
+//  height: 24px;
+//  margin-right: 10px;
+//}
+//
+//.card {
+//  border: 1px blue solid;
+//  border-radius: 4px;
+//  margin: 20px auto;
+//}
+//
+//#chat {
+//  margin-top: 100px;
+//  padding-top: 10px;
+//  width: 50%;
+//}
+//
+//@media (max-width: 1080px) {
+//  #chat {
+//    width: 75%;
+//  }
+//}
+//
+//@media (max-width: 640px) {
+//  #chat {
+//    width: 95%;
+//  }
+//}
+//
+//.msg-container > :first-child {
+//  margin-top: auto !important;
+//}
+//
+//.msg-container > * {
+//  flex-shrink: 0;
+//}
+//
+//.message {
+//  margin: 4px 10px;
+//}
+//
+//.name {
+//  font-weight: bold;
+//  margin-bottom: 3px;
+//}
+//
+//.message-image {
+//  max-width: 400px;
+//}
+//
+//#input-container {
+//  margin-top: 10px;
+//  padding: 0 10px;
+//}
+//
+//input[type="file"] {
+//  display: none;
+//}
+//
+//.chatbox-header {
+//  width: 100%;
+//  height: 110px;
+//  background-color: #000;
+//  border-radius: 10px 10px 0 0;
+//}
 
-.card {
-  border: 1px blue solid;
-  border-radius: 4px;
-  margin: 20px auto;
-}
 
-#chat {
-  margin-top: 100px;
-  padding-top: 10px;
-  width: 50%;
-}
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_tab/mixins';
 
-@media (max-width: 1080px) {
-  #chat {
-    width: 75%;
-  }
-}
-
-@media (max-width: 640px) {
-  #chat {
-    width: 95%;
-  }
-}
-
-.msg-container > :first-child {
-  margin-top: auto !important;
-}
-
-.msg-container > * {
-  flex-shrink: 0;
-}
-
-.message {
-  margin: 4px 10px;
-}
-
-.name {
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-.message-image {
-  max-width: 400px;
-}
-
-#input-container {
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-input[type="file"] {
-  display: none;
-}
-
-.chatbox-header {
-  width: 100%;
-  height: 110px;
-  background-color: #000;
-  border-radius: 10px 10px 0 0;
-}
+// Custom Tab styles
+@include tab-strip-color('chat-app',
+        $mat-gray-700, $mat-blue-500);
+@include tab-strip-selected-tab-color('chat-app', $mat-green-500);
