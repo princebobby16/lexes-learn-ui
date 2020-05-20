@@ -1,4 +1,6 @@
 
+import 'dart:html';
+
 import 'package:angular/angular.dart';
 import 'package:angular_app/src/dashboards/teacher_dashboard_component/routes.dart';
 import 'package:angular_components/angular_components.dart';
@@ -26,7 +28,7 @@ import 'package:angular_router/angular_router.dart';
   exports: [RoutePaths, Routes]
 )
 
-class TeacherDashboardComponent {
+class TeacherDashboardComponent implements CanActivate {
   bool customWidth = false;
   bool end = false;
   bool overlay = false;
@@ -51,4 +53,15 @@ class TeacherDashboardComponent {
     _router.navigate(RoutePaths.post_assignment.toUrl());
   }
 
+  @override
+  Future<bool> canActivate(RouterState current, RouterState next) async {
+    
+    if(window.localStorage.containsKey('token')) {
+      // Found token
+      return true;
+    }
+
+    _router.navigateByUrl('signin');
+    return false;
+  }
 }

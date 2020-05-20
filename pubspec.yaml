@@ -15,6 +15,7 @@ dependencies:
   pwa: ^0.2.0
   ng_bootstrap: any
   angular_modern_charts: ^0.2.0
+  stagexl: ^1.4.0
 
 dev_dependencies:
   angular_test: ^2.3.1
@@ -25,3 +26,4 @@ dev_dependencies:
   sass_builder: ^2.0.0
   shelf: any
   shelf_static: any
+  pedantic: ^1.8.0

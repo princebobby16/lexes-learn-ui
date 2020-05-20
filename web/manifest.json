@@ -1,28 +1,23 @@
 {
-  "name": "angular_app",
-  "short_name": "angular_app",
-  "description": "A web app that uses AngularDart",
+  "name": "lexes_learn",
+  "short_name": "lexes",
+  "description": "Online Learning tool",
   "lang": "en-US",
-  "start_url": "/",
+  "start_url": "/#/signin",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#ffffff",
+  "theme_color": "#e942f5",
   "background_color": "#ffffff",
-  "__mock_values__icons": [
+  "icons": [
     {
-      "src": "launcher-icon-1x.png",
-      "sizes": "48x48",
+      "src": "images/img-01.png",
+      "sizes": "316x289",
       "type": "image/png"
     },
     {
-      "src": "launcher-icon-2x.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "launcher-icon-4x.png",
-      "sizes": "192x192",
+      "src": "images/img-02.png",
+      "sizes": "200x200",
       "type": "image/png"
     }
   ]

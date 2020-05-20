@@ -6,6 +6,7 @@ import 'package:angular_app/src/login_details.dart';
 import 'package:angular_app/src/route_path.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
+import 'package:http/http.dart' as http;
 
 const List<String> _accounts = [
   'Teacher',
@@ -44,37 +45,55 @@ class SigninComponent {
 
     if(account_type == "Student"){
       url = "http://localhost:8000/users/student/login";
+
+      try {
+
+        var response = await http.post(
+          url,
+          headers: {
+            "Content-type":"application/json; charset=UTF-8"
+          },
+          body: json.encode(loginData)
+        );
+        
+        var resp = json.decode(response.body);
+        
+        // print(resp["token"]);
+
+        var token = resp["token"];
+        window.localStorage["token"] = token;
+
+      _router.navigate(RoutePaths.student_dashboard.toUrl());
+
+      } catch (e) {
+        print(e);
+      }
     }else if(account_type == "Teacher"){
       url = "http://localhost:8000/users/teacher/login";
+      try {
+
+        var response = await http.post(
+          url,
+          headers: {
+            "Content-type":"application/json; charset=UTF-8"
+          },
+          body: json.encode(loginData)
+        );
+        
+        var resp = json.decode(response.body);
+        
+        // print(resp["token"]);
+
+        var token = resp["token"];
+        window.localStorage["token"] = token;
+
+      _router.navigate(RoutePaths.student_dashboard.toUrl());
+
+      } catch (e) {
+        print(e);
+      }
     }
 
-    print(loginData);
-
-    // var response;
-
-    // Send to server
-    HttpRequest.request(
-        url,
-        method: 'POST',
-        sendData: json.encode(loginData),
-        requestHeaders: {
-          'Content-Type': 'application/json; charset=UTF-8'
-        }
-    )
-        .then((resp) {
-      print(resp.responseUrl);
-      print(resp.responseText);
-
-      // Store in local storage
-      // window.localStorage.addAll(token);
-
-      if (account_type == "Student") {
-        _router.navigate(RoutePaths.student_dashboard.toUrl());
-      } else if (account_type == "Teacher") {
-        _router.navigate(RoutePaths.teacher_dashboard.toUrl());
-      }
-
-    });
     return true;
   }
 

@@ -12,6 +12,7 @@ import 'main.template.dart' as self;
   [
     routerProvidersHash,
     ClassProvider(Client, useClass: BrowserClient),
+    Provider(pwa.Client, useClass: pwa.Client)
   ]
 )
 
