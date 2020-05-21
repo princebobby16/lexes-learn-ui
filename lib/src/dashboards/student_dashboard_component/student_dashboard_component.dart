@@ -29,7 +29,7 @@ import 'dart:html';
   ], 
   exports: [RoutePaths, Routes]
 )
-class StudentDashboardComponent implements CanActivate {
+class StudentDashboardComponent {
   bool customWidth = false;
   bool end = false;
   bool overlay = false;
@@ -54,18 +54,19 @@ class StudentDashboardComponent implements CanActivate {
     _router.navigate(RoutePaths.join_class.toUrl());
   }
 
-  @override
-  Future<bool> canActivate(RouterState current, RouterState next) async {
+//  @override
+//  Future<bool> canActivate(RouterState current, RouterState next) async {
 
 //    if(window.localStorage.containsKey('token')){
 //      // Found token
 //      return true;
+
 //    }
 //    TODO: Implement canNavigate
-    print("Couldn't find token");
+//    print("Couldn't find token");
 
 //    _router.navigateByUrl("signin");
 //    return false;
-  }
+//  }
   
 }
