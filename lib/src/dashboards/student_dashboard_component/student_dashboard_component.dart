@@ -5,7 +5,6 @@ import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 
 import 'dart:async';
-import 'dart:html';
 
 @Component(
   selector: 'student_dashboard-app',
@@ -53,20 +52,5 @@ class StudentDashboardComponent {
     print("Class");
     _router.navigate(RoutePaths.join_class.toUrl());
   }
-
-//  @override
-//  Future<bool> canActivate(RouterState current, RouterState next) async {
-
-//    if(window.localStorage.containsKey('token')){
-//      // Found token
-//      return true;
-
-//    }
-//    TODO: Implement canNavigate
-//    print("Couldn't find token");
-
-//    _router.navigateByUrl("signin");
-//    return false;
-//  }
   
 }
