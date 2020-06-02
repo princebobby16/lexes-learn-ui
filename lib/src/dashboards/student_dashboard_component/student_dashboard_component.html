@@ -8,16 +8,16 @@
         <!-- Here is a group without a label -->
         <div group>
             <material-list-item  (click)="goHome()">
-                <material-icon icon="home"></material-icon> Home
+                <material-icon class="blue-text" icon="home"></material-icon> Home
             </material-list-item>
             <material-list-item (click)="gotoJoinClass()">
-                <material-icon icon="add"></material-icon> Join Class
+                <material-icon class="blue-text" icon="group"></material-icon> Class
             </material-list-item>
             <material-list-item (click)="gotoChat()">
-                <material-icon icon="chat"></material-icon> Chat
+                <material-icon class="blue-text" icon="chat"></material-icon> Chat
             </material-list-item>   
             <material-list-item (click)="gotoAssignment()">
-                <material-icon icon="assignment"></material-icon> Assignments
+                <material-icon class="light-blue-text" icon="assignment"></material-icon> Assignments
             </material-list-item>
         </div>
         <div group>
@@ -31,7 +31,7 @@
         </div>
         <div class="material-spacer"></div>
         <material-list-item>
-            <material-icon icon="settings"></material-icon>Settings
+            <material-icon class="blue-text" icon="settings"></material-icon>Settings
         </material-list-item>
     </material-list>
 </material-drawer>
@@ -44,18 +44,16 @@
             <span class="breadcrumb-dn mr-auto">Gnart Academy</span>
             <div class="material-spacer"></div>
             <nav class="material-navigation">
-                <!-- <a> <i class="fas fa-bell"></i></a> -->
                 <material-icon icon="notifications"></material-icon>
             </nav>
             <nav class="material-navigation">
-                <!-- <a> <i class="fas fa-user"></i></a> -->
                 <material-icon icon="person"></material-icon>
             </nav>
         </div>
     </header>
     <br>
     
-    <div class="conatiner padding">
+    <div class="padding">
         <router-outlet [routes]="Routes.all"></router-outlet>
     </div>
 </material-content>

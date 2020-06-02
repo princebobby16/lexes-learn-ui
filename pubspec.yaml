@@ -27,3 +27,7 @@ dev_dependencies:
   shelf: any
   shelf_static: any
   pedantic: ^1.8.0
+
+transformers:
+  - $dart2js:
+      commandLineOptions: [--trust-type-annotations, --trust-primitives, --fast-startup]
