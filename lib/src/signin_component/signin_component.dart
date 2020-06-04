@@ -19,7 +19,7 @@ const List<String> _accounts = [
   directives: [formDirectives, coreDirectives],
 )
 
-class SigninComponent {
+class SigninComponent implements CanActivate{
   Login login = Login("", "", _accounts[0]);
   final Router _router;
 
@@ -95,6 +95,27 @@ class SigninComponent {
     }
 
     return true;
+  }
+
+  @override
+  Future<bool> canActivate(RouterState current, RouterState next) async {
+    if(window.localStorage.containsKey('token')) {
+      // Found token
+      if(window.localStorage.containsKey("account_type")) {
+        var type_account = window.localStorage["account_type"];
+        if(type_account == "Teacher") {
+          _router.navigateByUrl("teacher/dashboard");
+        }else if (type_account == "Student") {
+          _router.navigateByUrl("student/dashboard");
+        }else {
+          _router.navigateByUrl('signin');
+        }
+      }
+      return true;
+    }
+
+    _router.navigateByUrl('signin');
+    return false;
   }
 
 }

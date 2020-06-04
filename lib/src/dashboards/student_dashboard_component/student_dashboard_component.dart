@@ -1,10 +1,14 @@
+import 'dart:html';
+
 import 'package:angular/angular.dart';
-//import 'package:angular_app/src/dashboards/student_dashboard_component/chat_component/chat_component.dart';
+import 'package:angular_app/src/dashboards/student_dashboard_component/home_component/home_component.dart';
 import 'package:angular_app/src/dashboards/student_dashboard_component/routes.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 
 import 'dart:async';
+
+import 'package:stagexl/stagexl.dart';
 
 @Component(
   selector: 'student_dashboard-app',
@@ -23,7 +27,7 @@ import 'dart:async';
     MaterialListComponent,
     MaterialListItemComponent,
     MaterialToggleComponent,
-//    ChatComponent,
+    HomeComponent,
     routerDirectives
   ], 
   exports: [RoutePaths, Routes]
@@ -39,15 +43,18 @@ class StudentDashboardComponent {
   Future<void> gotoChat() async {
     print("Chat");
     _router.navigate(RoutePaths.chat.toUrl());
-  } 
+  }
+  
   Future<void> goHome() async  {
     print("Home");
     _router.navigate(RoutePaths.home.toUrl());
   }
+  
   Future<void> gotoAssignment() async {
     print("assignment");
-    // _router.navigate(RoutePaths.assignments.toUrl());
-  } 
+     _router.navigate(RoutePaths.assignments.toUrl());
+  }
+  
   Future<void> gotoJoinClass() async  {
     print("Class");
     _router.navigate(RoutePaths.join_class.toUrl());
