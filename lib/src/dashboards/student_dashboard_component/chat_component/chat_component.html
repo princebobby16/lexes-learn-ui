@@ -25,8 +25,7 @@
 
 <section>
 <!--    <h2>A tab strip with 3 tabs</h2>-->
-    <material-tab-strip (beforeTabChange)="onBeforeTabChange($event)"
-                        (tabChange)="onTabChange($event)"
+    <material-tab-strip (tabChange)="onTabChange($event)"
                         [tabLabels]="tabLabels">
     </material-tab-strip>
     <p>Active Tab Index {{tabIndex}}</p>
