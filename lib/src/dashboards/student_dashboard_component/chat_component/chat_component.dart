@@ -35,16 +35,10 @@ class ChatComponent {
     tabIndex = event.newIndex;
   }
 
-  void onBeforeTabChange(TabChangeEvent event) {
-    if (stopChange) {
-      event.preventDefault();
-    }
-  }
-
   final tabLabels = const <String>[
     'Chat',
     'Teachers',
-    'Student'
+    'Students'
   ];
-  final centeredTabLabels = const <String>['Tab 1 with a long name', 'Tab 2'];
+  
 }
