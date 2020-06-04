@@ -11,7 +11,7 @@ import 'main.template.dart' as self;
 @GenerateInjector(
   [
     routerProvidersHash,
-//    ClassProvider(Client, useClass: BrowserClient),
+    ClassProvider(Client, useClass: BrowserClient),
     Provider(pwa.Client, useClass: pwa.Client)
   ]
 )
